@@ -1,0 +1,65 @@
+package junitprueba;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AritmeticaTest {
+
+	@Test
+	void testSuma() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(2, aritmetica.suma(1, 1)); 
+		assertEquals(0, aritmetica.suma(1, -1)); 
+		assertEquals(0, aritmetica.suma(-1, 1)); 
+		assertEquals(-2, aritmetica.suma(-1, -1)); 
+		assertEquals(0, aritmetica.suma(0, 0)); 
+	}
+
+	@Test
+	void testResta() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(3,aritmetica.resta(4, 1));
+		assertEquals(5,aritmetica.resta(1, -4));
+		assertEquals(-5, aritmetica.resta(-4, 1)); 
+		
+	}
+
+	@Test
+	void testMultiplicacion() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(3,aritmetica.multiplicacion(3, 1));
+		assertEquals(0,aritmetica.multiplicacion(0, 1));
+		assertEquals(0,aritmetica.multiplicacion(0, 0));
+		assertEquals(8,aritmetica.multiplicacion(-2, -4));
+		assertEquals(-8,aritmetica.multiplicacion(-2, 4));
+		assertEquals((float)14.57,aritmetica.multiplicacion((float)3.1,(float)4.7));
+
+
+
+	}
+
+	@Test
+	void testDivision() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		Exception e=new Exception("Error");
+		try {
+			assertEquals(3,aritmetica.division(3, 1));
+			assertEquals(3,aritmetica.division(18, 0));
+			assertEquals(-2,aritmetica.division(-4, 2));
+			
+		}
+		catch (Exception a){
+			assertEquals(e.getClass(),a.getClass());
+			assertEquals(e.getMessage(),a.getMessage());
+
+		}
+	}
+
+	@Test
+	void testGetUltimaResultado() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(aritmetica.getUltimaResultado(),aritmetica.getUltimaResultado());
+	}
+
+}

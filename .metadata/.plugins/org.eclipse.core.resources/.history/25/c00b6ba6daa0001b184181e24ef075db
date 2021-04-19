@@ -1,0 +1,108 @@
+package es.iesjacaranda.persona;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PersonaTest {
+
+	@Test
+	void testSetNombre() {
+		fail("Not yet implemented");
+		
+	}
+
+	@Test
+	void testSetEdad() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetSexo() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetPeso() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetAltura() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetDNI() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetDNI() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetSexoDef() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetInfrapeso() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetPesoIdeal() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetSobrepeso() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetNombre() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetEdad() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetSexo() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetPeso() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetAltura() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCalcularIMC() {
+		assertEquals(0,Persona.PESO_IDEAL);
+		assertEquals(1,Persona.SOBREPESO);
+		assertEquals(-1,Persona.INFRAPESO);
+		
+	}
+
+	@Test
+	void testEsMayorDeEdad() {
+		
+	}
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+}

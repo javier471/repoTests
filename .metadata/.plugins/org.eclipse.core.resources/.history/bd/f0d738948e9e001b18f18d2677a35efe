@@ -1,0 +1,42 @@
+package junitprueba;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AritmeticaTest {
+
+	@Test
+	void testSuma() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(2, aritmetica.suma(1, 1)); 
+	}
+
+	@Test
+	void testResta() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(3,aritmetica.resta(4, 1));
+		assertEquals(3,aritmetica.resta(5, 1));
+	}
+
+	@Test
+	void testMultiplicacion() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(3,aritmetica.multiplicacion(3, 1));
+		assertEquals(4,aritmetica.multiplicacion(3, 1));
+	}
+
+	@Test
+	void testDivision() {
+		Aritmetica aritmetica = new Aritmetica(); 
+		assertEquals(3,aritmetica.division(3, 1));
+		assertEquals(3,aritmetica.division(0, 1));
+	}
+
+	@Test
+	void testGetUltimaResultado() {
+		Aritmetica aritmetica = new Aritmetica(); 
+
+	}
+
+}
