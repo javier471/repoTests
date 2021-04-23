@@ -5,12 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class SerieTest {
-
+	
+	Serie s1=new Serie();
 	@Test
 	void testGetTitulo() {
-		fail("Not yet implemented");
+	s1.setTitulo("twd");
+	assertTrue(s1.getTitulo()=="twd");
 	}
-
 	@Test
 	void testGetnumeroTemporadas() {
 		fail("Not yet implemented");
