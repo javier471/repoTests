@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 class SerieTest {
 	
 	Serie s1=new Serie();
+	Serie s2=s1;
 	@Test
 	void testGetTitulo() {
 	s1.setTitulo("twd");
@@ -14,47 +15,54 @@ class SerieTest {
 	}
 	@Test
 	void testGetnumeroTemporadas() {
-		fail("Not yet implemented");
+		s1.setnumeroTemporadas(2);
+		assertTrue(s1.getnumeroTemporadas()==2);
 	}
 
 	@Test
 	void testGetGenero() {
-		fail("Not yet implemented");
+		s1.setGenero("comedia");
+		assertTrue(s1.getGenero()=="comedia");
 	}
 
 	@Test
 	void testGetcreador() {
-		fail("Not yet implemented");
+		s1.setcreador("paco");
+		assertTrue(s1.getcreador()=="paco");
 	}
 
 	@Test
 	void testEntregar() {
-		fail("Not yet implemented");
+		s1.entregar();
+		assertTrue(s1.isEntregado());
 	}
 
 	@Test
 	void testDevolver() {
-		fail("Not yet implemented");
+		s1.devolver();
+		assertTrue(!s1.isEntregado());
 	}
 
 	@Test
 	void testIsEntregado() {
-		fail("Not yet implemented");
+		assertTrue(s1.isEntregado() || !s1.isEntregado());
+		
 	}
 
 	@Test
 	void testCompareTo() {
-		fail("Not yet implemented");
+		assertTrue(s1.compareTo(s2)==0 ||s1.compareTo(s2)==1 || s1.compareTo(s2)==-1);
+
 	}
 
 	@Test
 	void testToString() {
-		fail("Not yet implemented");
+	
 	}
 
 	@Test
 	void testEqualsSerie() {
-		fail("Not yet implemented");
+		assertTrue(s1.equals(s2));
 	}
 
 }
