@@ -45,19 +45,23 @@ class SerieTest {
 
 	@Test
 	void testIsEntregado() {
-		assertTrue(s1.isEntregado() || !s1.isEntregado());
+		assertEquals(false,s1.isEntregado());//como está a vacío debe devolver false
+		s1.entregar();
+		assertEquals(true,s1.isEntregado());//una vez lo hemos entregado nos tiene que devolver true
 		
 	}
 
 	@Test
 	void testCompareTo() {
-		assertTrue(s1.compareTo(s2)==0 ||s1.compareTo(s2)==1 || s1.compareTo(s2)==-1);
-
+		s1.setnumeroTemporadas(10);
+		Serie aux=new Serie();
+		aux.setnumeroTemporadas(8);
+		assertEquals(1,s1.compareTo(aux));
 	}
 
 	@Test
 	void testToString() {
-	
+		String cadena="";
 	}
 
 	@Test

@@ -46,7 +46,10 @@ class VideojuegoTest {
 
 	@Test
 	void testIsEntregado() {
-		assertTrue(v1.isEntregado() || !v1.isEntregado());
+		assertEquals(false,v1.isEntregado());
+		v1.entregar();
+		assertEquals(true,v1.isEntregado());
+
 	}
 
 	@Test
