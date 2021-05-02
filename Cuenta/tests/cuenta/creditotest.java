@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 class creditotest {
 
 	@Test
-	void testRetirar() {
-		fail("Not yet implemented");
+	void testRetirar() throws Exception {
+		Cuenta c1=new Cuenta("212","Paco");
+		c1.retirar(0);
 	}
 
 	@Test
