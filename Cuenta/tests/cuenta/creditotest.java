@@ -2,14 +2,21 @@ package cuenta;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class creditotest {
-
+	
+	private Credito c1;
+	@BeforeEach
+	public void init() {
+		Credito c1=new Credito("21212","Paco",null,500.00);
+	}
+	
 	@Test
-	void testRetirar() throws Exception {
-		Cuenta c1=new Cuenta("212","Paco");
-		c1.retirar(0);
+	void testRetirar() throws Exception  {
+		c1.retirar(100.00);
+		assertEquals(400.00,c1.getCreditoDisponible());
 	}
 
 	@Test
