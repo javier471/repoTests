@@ -44,7 +44,7 @@ class cuentatest {
 
 	@Test
 	void testIngresarStringDouble() throws Exception {
-		c1.ingresar(20,"mov");
+		//c1.ingresar(20,"mov");
 		assertEquals(20,c1.getSaldo());
 	}
 
