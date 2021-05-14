@@ -8,12 +8,19 @@ class SubscripcionTest {
 
 	@Test
 	void testPrecioPorMes() {
-		fail("Not yet implemented");
+		Subscripcion s1=new Subscripcion(100,4);
+		Subscripcion s2=new Subscripcion(1000,45);
+
+		assertEquals(25,s1.precioPorMes());
+		assertEquals(22.23,s2.precioPorMes());
+		
 	}
 
 	@Test
 	void testCancel() {
-		fail("Not yet implemented");
+		Subscripcion s1=new Subscripcion(100,4);	
+		s1.cancel();
+		assertEquals(0,s1.precioPorMes());
 	}
 
 }
