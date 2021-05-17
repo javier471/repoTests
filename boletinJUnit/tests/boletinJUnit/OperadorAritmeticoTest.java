@@ -18,7 +18,7 @@ class OperadorAritmeticoTest {
 	static Stream <Arguments> datoSuma(){
 		return Stream.of(
 				Arguments.of(0,1,1),
-				Arguments.of(4,5,9),
+				Arguments.of(4,5,9), 
 				Arguments.of(0,0,0),
 				Arguments.of(-4,5,1),
 				Arguments.of(4,-3,1),
@@ -37,6 +37,7 @@ class OperadorAritmeticoTest {
 				);
 	}
 	
+	
 	@ParameterizedTest
 	@MethodSource("datoSuma")
 	void testSuma(int num1, int num2, int result) {
@@ -51,7 +52,14 @@ class OperadorAritmeticoTest {
 	
 	@Test
 	void testDivisionEntreCero() throws Exception {
-		//assertEquals(OperadorAritmetico.division(4,0));
+		try {
+			assertEquals(2,OperadorAritmetico.division(5, 0));
+			fail("Salta exception");
+		}
+		catch( Exception e) {
+			
+		}
+		
 	}
 	
 

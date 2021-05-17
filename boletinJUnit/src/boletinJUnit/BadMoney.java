@@ -26,7 +26,7 @@ public static void main(String[] args)
     // Display discount amount
     System.out.println("Discount is: " + discount);  
 
-    // Example 2
+    // Example 2 
     // The amount you have in the bank: $12,345,678.12
     float principal = 12345678.12f;
     int count;    // count number of iterations
