@@ -31,15 +31,21 @@ class FridgeTest {
 			}
 	}
 
+	@ParameterizedTest
+	@MethodSource("datos")
+	void testTake1(String poner,String preguntar, Boolean resultado) {
+		
+	}
+	
+	
 	@Test
-	void testTake1() {
+	void testput() {
 		Fridge f=new Fridge();
+		f.put("pan");
+		assertEquals(true, f.contains("pan"));
 		
 	}
 
-	@Test
-	void testTake() {
-		fail("Not yet implemented");
-	}
+	
 
 }
