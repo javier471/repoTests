@@ -30,12 +30,6 @@ class FridgeTest {
 		catch (Exception e) {
 			}
 	}
-
-	@ParameterizedTest
-	@MethodSource("datos")
-	void testTake1(String poner,String preguntar, Boolean resultado) {
-		
-	}
 	
 	
 	@Test

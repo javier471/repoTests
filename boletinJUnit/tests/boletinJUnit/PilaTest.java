@@ -9,22 +9,27 @@ class PilaTest {
 	@Test
 	void testPush() {
 		Pila p=new Pila();
-		
+		p.push(10);
+		assertEquals(10,p.pop());
 	}
 
 	@Test
 	void testPop() {
-		fail("Not yet implemented");
+		Pila p=new Pila();
+		p.push(4);
+		p.push(8);
+		assertEquals(8,p.pop());
 	}
 
 	@Test
 	void testIsEmpty() {
-		fail("Not yet implemented");
+		Pila p=new Pila();
+		assertEquals(true,p.isEmpty());
 	}
 
 	@Test
 	void testTop() {
-		fail("Not yet implemented");
+		Pila p=new Pila();
 	}
 
 }
